@@ -1,8 +1,14 @@
 
+import Header from '../Layout/Header'
+import Footer from '../Layout/Footer'
+
 const LandingPage = () => {
 	return(
 		<div>
-			Landing Page
+			<Header/>
+				<div className="pl-[2%]">
+					Blogs wih Benifits
+				</div>
 		</div>
 	)
 }
