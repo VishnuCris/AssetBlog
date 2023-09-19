@@ -7,9 +7,9 @@ const Header = () => {
 	const [name,setName] = useState('Asseter')
 	
 	return(
-		<header className="flex w-full bg-[#d15e83] pl-[2%] pr-[2%] fixed h-[50px] z-10">
+		<header className="flex w-full pl-[4%] pr-[4%] fixed h-[15%] z-10 pt-[1%]">
 			<h1 className='w-2/6 self-center'>{name}</h1>
-			<nav className="w-4/6 flex flex-row-reverse gap-[5%] items-center">
+			<nav className="w-4/6 flex flex-row-reverse gap-[5%] items-center text-[0.8rem]">
 				<Link href="/blog">Start</Link>
 				<Link href="/">Sign Up</Link>
 				<Link href="/">Membership</Link>
