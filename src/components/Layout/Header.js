@@ -1,20 +1,21 @@
 
 import {useState} from 'react'
+import Link from 'next/link'
 
 const Header = () => {
 
 	const [name,setName] = useState('Asseter')
 	
 	return(
-		<div className="flex w-full pl-[2%] pr-[2%] bg-[#5bbeab] h-[15vh]">
-			<div className='w-2/6 self-center text-[2rem]'>{name}</div>
-			<div className="w-4/6 flex flex-row-reverse gap-[5%] items-center">
-				<div>Membership</div>
-				<div>Membership</div>
-				<div>Membership</div>
-				<div>Membership</div>
-			</div>
-		</div>
+		<header className="flex w-full bg-[#d15e83] pl-[2%] pr-[2%] fixed h-[50px] z-10">
+			<h1 className='w-2/6 self-center'>{name}</h1>
+			<nav className="w-4/6 flex flex-row-reverse gap-[5%] items-center">
+				<Link href="/blog">Start</Link>
+				<Link href="/">Sign Up</Link>
+				<Link href="/">Membership</Link>
+				<Link href="/">Write</Link>
+			</nav>
+		</header>
 	)
 }
 
